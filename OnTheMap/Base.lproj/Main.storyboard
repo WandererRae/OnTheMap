@@ -46,6 +46,9 @@
                                         <rect key="frame" x="0.0" y="76" width="343" height="41"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <state key="normal" title="Log In"/>
+                                        <connections>
+                                            <action selector="userTappedLogInButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SeB-4U-yWf"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account? Sign Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHh-Xd-Kef">
                                         <rect key="frame" x="0.0" y="125" width="343" height="20.5"/>
@@ -69,6 +72,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="1SO-bI-ZRo" id="8ep-ec-RQU"/>
+                        <outlet property="logInButton" destination="UIw-Lh-Cuh" id="mIV-DV-WI5"/>
+                        <outlet property="noAccountSignUpLabel" destination="VHh-Xd-Kef" id="ilm-wS-LDg"/>
+                        <outlet property="passwordTextField" destination="AhH-08-PNO" id="zGh-mM-1kS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -114,12 +123,36 @@
                         <viewLayoutGuide key="safeArea" id="Lyz-Bs-Y9f"/>
                     </view>
                     <navigationItem key="navigationItem" title="On the Map" id="azs-NM-Jme">
-                        <barButtonItem key="leftBarButtonItem" title="LOGOUT" id="VhF-3B-32y"/>
+                        <barButtonItem key="leftBarButtonItem" title="LOGOUT" id="VhF-3B-32y">
+                            <connections>
+                                <action selector="logoutOfUdacity:" destination="etw-Tc-nsu" id="bbD-YF-q6y"/>
+                            </connections>
+                        </barButtonItem>
                         <rightBarButtonItems>
-                            <barButtonItem systemItem="add" id="5Hh-J1-cTb"/>
-                            <barButtonItem systemItem="refresh" id="wh1-jh-cw1"/>
+                            <barButtonItem systemItem="add" id="5Hh-J1-cTb">
+                                <connections>
+                                    <action selector="addNewLocation:" destination="etw-Tc-nsu" id="hHC-Om-UH8"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="refresh" id="wh1-jh-cw1">
+                                <connections>
+                                    <action selector="refreshMap:" destination="etw-Tc-nsu" id="sNs-FA-phW"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="addNewLocationButton" destination="5Hh-J1-cTb" id="cjj-Et-7z9"/>
+                        <outlet property="logoutOfUdacityButton" destination="VhF-3B-32y" id="DL9-GP-obW"/>
+                        <outlet property="mapView" destination="w0v-vr-bF3" id="X8A-cj-Lra"/>
+                        <outlet property="refreshMapButton" destination="wh1-jh-cw1" id="Bwi-g3-7j6"/>
+                        <segue destination="WDz-KH-VeW" kind="popoverPresentation" id="fN0-wR-Cn8">
+                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                            <popoverPassthroughViews>
+                                <mapView reference="w0v-vr-bF3"/>
+                            </popoverPassthroughViews>
+                        </segue>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cm6-nF-Cga" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -134,11 +167,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecentLocationCell" id="8FD-Hf-ZwQ">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="RecentLocationCell" id="8FD-Hf-ZwQ" customClass="RecentLocationTableViewCell" customModule="OnTheMap" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8FD-Hf-ZwQ" id="haK-7i-YPi">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_pin" translatesAutoresizingMaskIntoConstraints="NO" id="zmA-TD-Zjd">
@@ -148,16 +181,16 @@
                                             </constraints>
                                         </imageView>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="QqN-7f-eiK">
-                                            <rect key="frame" x="43.5" y="0.0" width="331.5" height="43.5"/>
+                                            <rect key="frame" x="43.5" y="0.0" width="297.5" height="43.5"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHH-nc-NZn">
-                                                    <rect key="frame" x="0.0" y="0.0" width="331.5" height="18"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="297.5" height="18"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="URL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Xt-5j-QIZ">
-                                                    <rect key="frame" x="0.0" y="26" width="331.5" height="17.5"/>
+                                                    <rect key="frame" x="0.0" y="26" width="297.5" height="17.5"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -175,6 +208,10 @@
                                         <constraint firstItem="QqN-7f-eiK" firstAttribute="top" secondItem="haK-7i-YPi" secondAttribute="top" id="jGD-UG-ZxX"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="locationNameLabel" destination="jHH-nc-NZn" id="Iid-yh-eI1"/>
+                                    <outlet property="locationURLLabel" destination="1Xt-5j-QIZ" id="ngd-RN-S4f"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -183,12 +220,29 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="On the Map" id="dBd-vI-pfb">
-                        <barButtonItem key="leftBarButtonItem" title="LOGOUT" id="0Cs-AM-N9o"/>
+                        <barButtonItem key="leftBarButtonItem" title="LOGOUT" id="0Cs-AM-N9o">
+                            <connections>
+                                <action selector="logoutOfUdacity:" destination="4W3-9b-ya5" id="Il6-rt-ggh"/>
+                            </connections>
+                        </barButtonItem>
                         <rightBarButtonItems>
-                            <barButtonItem systemItem="add" id="N1C-7b-6eP"/>
-                            <barButtonItem systemItem="refresh" id="4yO-Q2-4Oh"/>
+                            <barButtonItem systemItem="add" id="N1C-7b-6eP">
+                                <connections>
+                                    <action selector="addNewLocation:" destination="4W3-9b-ya5" id="43X-J5-IVn"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="refresh" id="4yO-Q2-4Oh">
+                                <connections>
+                                    <action selector="refreshLocationList:" destination="4W3-9b-ya5" id="63D-2H-0eG"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="addNewLocationButton" destination="N1C-7b-6eP" id="EeG-eA-JMp"/>
+                        <outlet property="logoutOfUdacityButton" destination="0Cs-AM-N9o" id="uo2-DX-g5A"/>
+                        <outlet property="refreshLocationListButton" destination="4yO-Q2-4Oh" id="yQr-pM-KwE"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kGc-Pt-KTX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -227,6 +281,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="49w-RO-vL0"/>
                     </view>
+                    <connections>
+                        <outlet property="PinURLLabel" destination="0R3-ou-QRD" id="bcp-5F-pnD"/>
+                        <outlet property="pinLocationNameLabel" destination="NIs-zP-wzP" id="rD6-0U-dXe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2pv-Pi-Arh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

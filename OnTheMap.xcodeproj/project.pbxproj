@@ -16,6 +16,8 @@
 		115C65EF208933D700A02E7C /* RecentLocationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115C65EE208933D700A02E7C /* RecentLocationsTableViewController.swift */; };
 		115C65F12089345A00A02E7C /* InformationPostingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115C65F02089345A00A02E7C /* InformationPostingViewController.swift */; };
 		11DEF6D0209104AD003CF51D /* PinInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DEF6CF209104AD003CF51D /* PinInfoViewController.swift */; };
+		11E2D14A2098BB4A00CFD963 /* RecentLocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E2D1492098BB4A00CFD963 /* RecentLocationTableViewCell.swift */; };
+		11E2D14C2098BD3D00CFD963 /* Parse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E2D14B2098BD3D00CFD963 /* Parse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		115C65EE208933D700A02E7C /* RecentLocationsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentLocationsTableViewController.swift; sourceTree = "<group>"; };
 		115C65F02089345A00A02E7C /* InformationPostingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationPostingViewController.swift; sourceTree = "<group>"; };
 		11DEF6CF209104AD003CF51D /* PinInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinInfoViewController.swift; sourceTree = "<group>"; };
+		11E2D1492098BB4A00CFD963 /* RecentLocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RecentLocationTableViewCell.swift; path = "Supporting Files/RecentLocationTableViewCell.swift"; sourceTree = "<group>"; };
+		11E2D14B2098BD3D00CFD963 /* Parse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				115C65DC2089322F00A02E7C /* Main.storyboard */,
+				11E2D1492098BB4A00CFD963 /* RecentLocationTableViewCell.swift */,
 				11DEF6CF209104AD003CF51D /* PinInfoViewController.swift */,
 				115C65F02089345A00A02E7C /* InformationPostingViewController.swift */,
 				115C65EA2089330500A02E7C /* LoginViewController.swift */,
@@ -78,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				115C65D82089322F00A02E7C /* AppDelegate.swift */,
+				11E2D14B2098BD3D00CFD963 /* Parse.swift */,
 				115C65DF2089322F00A02E7C /* Assets.xcassets */,
 				115C65E12089322F00A02E7C /* LaunchScreen.storyboard */,
 			);
@@ -157,10 +163,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				115C65ED208933BB00A02E7C /* MapTabbedViewController.swift in Sources */,
+				11E2D14C2098BD3D00CFD963 /* Parse.swift in Sources */,
 				115C65F12089345A00A02E7C /* InformationPostingViewController.swift in Sources */,
 				115C65EB2089330500A02E7C /* LoginViewController.swift in Sources */,
 				115C65D92089322F00A02E7C /* AppDelegate.swift in Sources */,
 				11DEF6D0209104AD003CF51D /* PinInfoViewController.swift in Sources */,
+				11E2D14A2098BB4A00CFD963 /* RecentLocationTableViewCell.swift in Sources */,
 				115C65EF208933D700A02E7C /* RecentLocationsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

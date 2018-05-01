@@ -10,6 +10,10 @@ import UIKit
 
 class PinInfoViewController: UIViewController {
 
+    @IBOutlet weak var pinLocationNameLabel: UILabel!
+    @IBOutlet weak var PinURLLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

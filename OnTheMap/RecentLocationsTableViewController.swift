@@ -9,15 +9,17 @@
 import UIKit
 
 class RecentLocationsTableViewController: UITableViewController {
-
+    
+    @IBOutlet weak var logoutOfUdacityButton: UIBarButtonItem!
+    @IBOutlet weak var refreshLocationListButton: UIBarButtonItem!
+    @IBOutlet weak var addNewLocationButton: UIBarButtonItem!
+    
+    private var finalParseURL: URL?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -82,6 +84,32 @@ class RecentLocationsTableViewController: UITableViewController {
     }
     */
 
+    @IBAction func logoutOfUdacity(_ sender: Any) {
+    }
+    
+    @IBAction func refreshLocationList(_ sender: Any) {
+    }
+    
+    @IBAction func addNewLocation(_ sender: Any) {
+    }
+    
+    private func requestLocationData() {
+        let timeoutInterval = 30.0
+        let parseRequest = URLRequest(url: finalParseURL!, cachePolicy: URLRequest.CachePolicy.useProtocolCachePolicy, timeoutInterval: timeoutInterval)
+    }
+    
+    private func setParseURLString() -> URL? {
+        var parseURLArray = [String]()
+        parseURLArray.append(ParseURL.apiMethod)
+        ParseOptionalParameters.limitNumber = 100
+        parseURLArray.append(ParseOptionalParameters.limitParameter!)
+        
+        let string = parseURLArray.joined(separator: "?").addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+        finalParseURL = string
+        return finalParseURL
+    }
+    
+    
     /*
     // MARK: - Navigation
 

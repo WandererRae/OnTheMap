@@ -7,9 +7,15 @@
 //
 
 import UIKit
+import MapKit
 
 class MapTabbedViewController: UIViewController {
 
+    @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var logoutOfUdacityButton: UIBarButtonItem!
+    @IBOutlet weak var refreshMapButton: UIBarButtonItem!
+    @IBOutlet weak var addNewLocationButton: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,7 +27,15 @@ class MapTabbedViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func logoutOfUdacity(_ sender: Any) {
+    }
+    
+    @IBAction func refreshMap(_ sender: Any) {
+    }
+    
+    @IBAction func addNewLocation(_ sender: Any) {
+    }
+    
     /*
     // MARK: - Navigation
 
