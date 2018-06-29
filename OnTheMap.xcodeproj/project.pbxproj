@@ -11,13 +11,18 @@
 		115C65DE2089322F00A02E7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115C65DC2089322F00A02E7C /* Main.storyboard */; };
 		115C65E02089322F00A02E7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 115C65DF2089322F00A02E7C /* Assets.xcassets */; };
 		115C65E32089322F00A02E7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115C65E12089322F00A02E7C /* LaunchScreen.storyboard */; };
-		115C65EB2089330500A02E7C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115C65EA2089330500A02E7C /* LoginViewController.swift */; };
-		115C65ED208933BB00A02E7C /* MapTabbedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115C65EC208933BB00A02E7C /* MapTabbedViewController.swift */; };
-		115C65EF208933D700A02E7C /* RecentLocationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115C65EE208933D700A02E7C /* RecentLocationsTableViewController.swift */; };
-		115C65F12089345A00A02E7C /* InformationPostingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115C65F02089345A00A02E7C /* InformationPostingViewController.swift */; };
-		11DEF6D0209104AD003CF51D /* PinInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DEF6CF209104AD003CF51D /* PinInfoViewController.swift */; };
+		115C65EB2089330500A02E7C /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115C65EA2089330500A02E7C /* LoginVC.swift */; };
+		115C65ED208933BB00A02E7C /* MapTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115C65EC208933BB00A02E7C /* MapTabVC.swift */; };
+		115C65EF208933D700A02E7C /* RecentLocationsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115C65EE208933D700A02E7C /* RecentLocationsTableVC.swift */; };
+		115C65F12089345A00A02E7C /* AddLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115C65F02089345A00A02E7C /* AddLocationVC.swift */; };
 		11E2D14A2098BB4A00CFD963 /* RecentLocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E2D1492098BB4A00CFD963 /* RecentLocationTableViewCell.swift */; };
-		11E2D14C2098BD3D00CFD963 /* Parse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E2D14B2098BD3D00CFD963 /* Parse.swift */; };
+		11E2D14C2098BD3D00CFD963 /* ParseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E2D14B2098BD3D00CFD963 /* ParseClient.swift */; };
+		FB0273B020CF12CB00E59DEE /* AddLocationOnMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0273AF20CF12CB00E59DEE /* AddLocationOnMapVC.swift */; };
+		FB702C9620BF0F4E003C557C /* TabBarChildVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB702C9520BF0F4E003C557C /* TabBarChildVC.swift */; };
+		FB702C9820BF41A3003C557C /* UdacityClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB702C9720BF41A3003C557C /* UdacityClient.swift */; };
+		FB72E98F20CB1924002F6554 /* StudentLocationEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB72E98E20CB1924002F6554 /* StudentLocationEntry.swift */; };
+		FB72E99120CB192F002F6554 /* StudentLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB72E99020CB192F002F6554 /* StudentLocations.swift */; };
+		FBC66E4720CC3CB6003E8B95 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC66E4620CC3CB6003E8B95 /* UIHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,13 +32,18 @@
 		115C65DF2089322F00A02E7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		115C65E22089322F00A02E7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		115C65E42089322F00A02E7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		115C65EA2089330500A02E7C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		115C65EC208933BB00A02E7C /* MapTabbedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTabbedViewController.swift; sourceTree = "<group>"; };
-		115C65EE208933D700A02E7C /* RecentLocationsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentLocationsTableViewController.swift; sourceTree = "<group>"; };
-		115C65F02089345A00A02E7C /* InformationPostingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationPostingViewController.swift; sourceTree = "<group>"; };
-		11DEF6CF209104AD003CF51D /* PinInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinInfoViewController.swift; sourceTree = "<group>"; };
-		11E2D1492098BB4A00CFD963 /* RecentLocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RecentLocationTableViewCell.swift; path = "Supporting Files/RecentLocationTableViewCell.swift"; sourceTree = "<group>"; };
-		11E2D14B2098BD3D00CFD963 /* Parse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parse.swift; sourceTree = "<group>"; };
+		115C65EA2089330500A02E7C /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		115C65EC208933BB00A02E7C /* MapTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTabVC.swift; sourceTree = "<group>"; };
+		115C65EE208933D700A02E7C /* RecentLocationsTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentLocationsTableVC.swift; sourceTree = "<group>"; };
+		115C65F02089345A00A02E7C /* AddLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationVC.swift; sourceTree = "<group>"; };
+		11E2D1492098BB4A00CFD963 /* RecentLocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentLocationTableViewCell.swift; sourceTree = "<group>"; };
+		11E2D14B2098BD3D00CFD963 /* ParseClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseClient.swift; sourceTree = "<group>"; };
+		FB0273AF20CF12CB00E59DEE /* AddLocationOnMapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationOnMapVC.swift; sourceTree = "<group>"; };
+		FB702C9520BF0F4E003C557C /* TabBarChildVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarChildVC.swift; sourceTree = "<group>"; };
+		FB702C9720BF41A3003C557C /* UdacityClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdacityClient.swift; sourceTree = "<group>"; };
+		FB72E98E20CB1924002F6554 /* StudentLocationEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentLocationEntry.swift; sourceTree = "<group>"; };
+		FB72E99020CB192F002F6554 /* StudentLocations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentLocations.swift; sourceTree = "<group>"; };
+		FBC66E4620CC3CB6003E8B95 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIHelper.swift; path = OnTheMap/Models/UIHelper.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,28 +76,49 @@
 		115C65D72089322F00A02E7C /* OnTheMap */ = {
 			isa = PBXGroup;
 			children = (
-				115C65DC2089322F00A02E7C /* Main.storyboard */,
-				11E2D1492098BB4A00CFD963 /* RecentLocationTableViewCell.swift */,
-				11DEF6CF209104AD003CF51D /* PinInfoViewController.swift */,
-				115C65F02089345A00A02E7C /* InformationPostingViewController.swift */,
-				115C65EA2089330500A02E7C /* LoginViewController.swift */,
-				115C65EC208933BB00A02E7C /* MapTabbedViewController.swift */,
-				115C65EE208933D700A02E7C /* RecentLocationsTableViewController.swift */,
-				115C65F22089352100A02E7C /* Supporting Files */,
+				FB72E98420C4900D002F6554 /* Controllers */,
+				115C65F22089352100A02E7C /* Models */,
+				FB72E98520C4904C002F6554 /* Views */,
 				115C65E42089322F00A02E7C /* Info.plist */,
 			);
 			path = OnTheMap;
 			sourceTree = "<group>";
 		};
-		115C65F22089352100A02E7C /* Supporting Files */ = {
+		115C65F22089352100A02E7C /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				115C65D82089322F00A02E7C /* AppDelegate.swift */,
-				11E2D14B2098BD3D00CFD963 /* Parse.swift */,
-				115C65DF2089322F00A02E7C /* Assets.xcassets */,
-				115C65E12089322F00A02E7C /* LaunchScreen.storyboard */,
+				FBC66E4620CC3CB6003E8B95 /* UIHelper.swift */,
+				11E2D14B2098BD3D00CFD963 /* ParseClient.swift */,
+				FB72E98E20CB1924002F6554 /* StudentLocationEntry.swift */,
+				FB72E99020CB192F002F6554 /* StudentLocations.swift */,
+				FB702C9720BF41A3003C557C /* UdacityClient.swift */,
 			);
-			path = "Supporting Files";
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FB72E98420C4900D002F6554 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				115C65EA2089330500A02E7C /* LoginVC.swift */,
+				FB702C9520BF0F4E003C557C /* TabBarChildVC.swift */,
+				115C65EC208933BB00A02E7C /* MapTabVC.swift */,
+				115C65EE208933D700A02E7C /* RecentLocationsTableVC.swift */,
+				115C65F02089345A00A02E7C /* AddLocationVC.swift */,
+				FB0273AF20CF12CB00E59DEE /* AddLocationOnMapVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FB72E98520C4904C002F6554 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				11E2D1492098BB4A00CFD963 /* RecentLocationTableViewCell.swift */,
+				115C65DC2089322F00A02E7C /* Main.storyboard */,
+				115C65E12089322F00A02E7C /* LaunchScreen.storyboard */,
+				115C65DF2089322F00A02E7C /* Assets.xcassets */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,7 +148,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = WandererRae;
 				TargetAttributes = {
 					115C65D42089322F00A02E7C = {
@@ -162,14 +193,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				115C65ED208933BB00A02E7C /* MapTabbedViewController.swift in Sources */,
-				11E2D14C2098BD3D00CFD963 /* Parse.swift in Sources */,
-				115C65F12089345A00A02E7C /* InformationPostingViewController.swift in Sources */,
-				115C65EB2089330500A02E7C /* LoginViewController.swift in Sources */,
+				FBC66E4720CC3CB6003E8B95 /* UIHelper.swift in Sources */,
+				FB702C9820BF41A3003C557C /* UdacityClient.swift in Sources */,
+				FB0273B020CF12CB00E59DEE /* AddLocationOnMapVC.swift in Sources */,
+				FB702C9620BF0F4E003C557C /* TabBarChildVC.swift in Sources */,
+				115C65ED208933BB00A02E7C /* MapTabVC.swift in Sources */,
+				FB72E98F20CB1924002F6554 /* StudentLocationEntry.swift in Sources */,
+				11E2D14C2098BD3D00CFD963 /* ParseClient.swift in Sources */,
+				115C65F12089345A00A02E7C /* AddLocationVC.swift in Sources */,
+				115C65EB2089330500A02E7C /* LoginVC.swift in Sources */,
 				115C65D92089322F00A02E7C /* AppDelegate.swift in Sources */,
-				11DEF6D0209104AD003CF51D /* PinInfoViewController.swift in Sources */,
+				FB72E99120CB192F002F6554 /* StudentLocations.swift in Sources */,
 				11E2D14A2098BB4A00CFD963 /* RecentLocationTableViewCell.swift in Sources */,
-				115C65EF208933D700A02E7C /* RecentLocationsTableViewController.swift in Sources */,
+				115C65EF208933D700A02E7C /* RecentLocationsTableVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +245,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -216,6 +253,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -266,6 +304,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -273,6 +312,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
